@@ -1,0 +1,104 @@
+body{
+    background-image: url(./bg.webp);
+    background-size: cover;
+    margin: 0;
+    height: 125vh;
+}
+
+header{
+    padding: 20px;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    position: sticky;
+    top: 0;
+}
+
+.logoBox{
+    display: inline-block;
+    width: 280px;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navBox{
+    width: 740px;
+    font-size: 26px;
+    position: absolute;
+    right: 20px;
+    display: inline-block;
+}
+.navBox>a{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 26px;
+    
+}
+.navBox>a:hover{
+    color: salmon;
+}
+
+#homie{
+    color: orange;
+}
+
+.heading{
+    color: salmon;
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top: 60px;
+    left: 70px;
+    width: 500px;
+
+}
+.heading+h3{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    width: 500px;
+    position: relative;
+    left: 90px;
+
+}
+.heading+h3+p{
+    color: white;
+    font-family: 'DM Serif Text', serif;
+    width: 700px;
+    height: 225px;
+    line-height: 50px;
+    position: relative;
+    left: 70px;
+    font-size: 30px;
+    font-style: italic;
+    top: 20px;
+}
+
+.btn{
+    width: 220px;
+    padding: 20px;
+    border: 2px solid salmon;
+    background-color: salmon;
+    color: rgb(248, 245, 245);
+    font-family: 'Roboton';
+    position: relative;
+    top: 10px;
+    left: 80px;
+    font-weight: 600px;
+    font-size: 25px;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+.btn:hover{
+    background-color: rgba(255, 255, 0, 0);
+    color: white;
+}
+
+footer{
+    color: white;
+    position: fixed;
+    font-family: 'Roboto';
+    bottom: 10px;
+    left: 50px;
+}
