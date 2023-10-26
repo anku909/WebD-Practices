@@ -177,6 +177,7 @@ html, body{
     position: absolute;
     z-index: 999;
     pointer-events: none;
+    transform: translate(-50%, -50%);
 }
 
 #about{
