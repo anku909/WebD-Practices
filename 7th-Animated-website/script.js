@@ -37,10 +37,56 @@ ScrollTrigger.refresh();
 
 }
 
+
+function cursor (){
+  var crsr = document.querySelector(".cursor");
+  var main = document.querySelector(".main");
+  main.addEventListener("mousemove",function(dets){
+  crsr.style.left = dets.x +"px";
+  crsr.style.top = dets.y +"px";
+})
+}
+
+cursor();
+
 init();
 
-gsap.to(".page1 h1",{
-  x: -80,
-  duration: 1,
+var tl = gsap.timeline({
+  scrollTrigger:{
+    trigger:".page1 h1",
+    scroller:".main",
+    markers:true,
+    start:"top 27%",
+    end:"top 0",
+    scrub:3
+  }
+})
 
+
+
+tl.to(".page1 h1",{
+  x: -100,
+},"anim")
+
+tl.to(".page1 h2",{
+  x:100
+},"anim")
+
+tl.to(".page1 video",{
+  width:"90%"
+},"anim")
+
+var tl2 = gsap.timeline({
+  scrollTrigger:{
+    trigger:".page1 h1",
+    scroller:".main",
+    markers:true,
+    start:"top -120%",
+    end:"top 130",
+    scrub:3
+  }
+})
+
+tl2.to(".main",{
+  backgroundColor:"#fff"
 })
