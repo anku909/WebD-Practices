@@ -181,13 +181,12 @@ html, body{
 .page4{
     min-height: 100vh;
     width: 100%;
-    background-color: red;
     z-index: 9;
     padding: 100px;
 }
 
 .elem{
-    background-color: salmon;
+    /* background-color: salmon; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -241,5 +240,32 @@ html, body{
     min-height: 100vh;
     width: 100%;
     position: relative;
+    z-index: 9;
+    padding: 40px 100px;
 }
 
+.page5 h2{
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#box{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 20px;
+    border-top: 2px solid #fff;
+}
+
+#box:nth-last-child(1){
+    border-bottom: 2px solid #fff;
+}
+
+footer{
+    height: 90vh;
+    width: 100%;
+    background-color: #EDBFFF;
+}
